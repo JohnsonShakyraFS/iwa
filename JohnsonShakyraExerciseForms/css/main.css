@@ -1,0 +1,140 @@
+/* Alternative CSS box model */
+* {
+box-sizing: border-box;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: hsl(48, 91%, 50%);
+}
+a:hover {
+    color: blue;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    background-color: beige;
+}
+strong {
+    font-weight: 400;
+    color: red;
+}
+
+em {
+    font-style: italic;
+    color: purple;
+}
+header {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items:center;
+}
+img {
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal; 
+    background-color: hsl(48, 80%, 65%);
+    color: rgb(255, 166, 0);
+    padding: 2%;
+    width: 30%;
+    border: 3px solid orangered;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 5px 5px 5px orange;
+    border-radius: 2rem;
+}
+h2 {
+    text-align: left;
+    font-size: 2rem;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: blue; 
+    text-shadow: 5px 5px 5px skyblue;
+}
+h3 {
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+}
+
+/* Wrapper Styles */
+#wrapper {
+    width: 95%;
+    border: 5px solid rgb(169, 169, 12);
+    margin: auto;
+    padding: 1.25rem;
+}
+
+/* List Styles */
+ul {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 2rem;
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    list-style-type: none;
+}
+
+/* Form Styles */
+form {
+    border: 2px solid orangered;
+    padding: 1rem;
+    background-color: hsl(48, 80%, 65%);
+}
+form > div {
+    margin-bottom: 1rem;
+}
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.4rem;
+}
+input[type="checkbox"] {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+}
+#form-check > label {
+    display: inline-block;
+}
+form > button {
+    background-color: rgb(255, 166, 0);
+    color: ghostwhite;
+    border: none;
+    padding: 0.375rem 2rem;
+    border-radius: 0.25 rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: blue;
+}
